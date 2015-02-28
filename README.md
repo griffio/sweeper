@@ -1,7 +1,20 @@
 #Sweeper test example
 
+## code kata for minesweeper, transform input squares with mine adjacency hints in output format
 
+example
 
+Input format
+
+*...
+....
+0 0
+
+Output format
+
+Field #1:
+*100
+1100
 
 ==============
 
