@@ -5,16 +5,18 @@
 example
 
 Input format
-
+~~~~
 *...
 ....
 0 0
+~~~~
 
 Output format
-
+~~~~
 Field #1:
 *100
 1100
+~~~~
 
 ==============
 
