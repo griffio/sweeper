@@ -6,14 +6,16 @@ import java.io.IOException;
 
 public class FieldAnalyzer {
 
-    private final int rows;
-    private final boolean[][] mined;
-    private final int cols;
+  private final int rows;
+  private final int cols;
+  private final boolean[][] mined;
+  private final int[][] hints;
 
-    public FieldAnalyzer(int rows, int cols) {
+  public FieldAnalyzer(int rows, int cols) {
         this.rows = rows;
         this.cols = cols;
         this.mined = new boolean[rows + 2][cols + 2];
+        this.hints = new int[rows + 2][cols + 2];
     }
 
     public void placeMine(int rowNumber, int colNumber) {
@@ -25,8 +27,6 @@ public class FieldAnalyzer {
     }
 
     public int[][] hints() {
-
-        int[][] hints = new int[rows + 2][cols + 2];
 
         for (int row = 1; row <= rows; row++) {
             for (int col = 1; col <= cols; col++) {
